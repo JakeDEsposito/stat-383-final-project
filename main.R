@@ -13,7 +13,7 @@ print(summary(fit_lm))
 
 # Plotting the data points
 plot(spotify_data$streams, spotify_data$bpm, main = "Streams vs BPM",
-     xlab = "BPM", ylab = "Streams",
+     xlab = "Streams", ylab = "BPM",
      pch = 19)
 
 # Adding the regression line to the above plot
