@@ -25,3 +25,7 @@ plot(data_culled$bpm, data_culled$streams, main = "Streams vs BPM",
 
 # Adding the regression line to the above plot
 abline(fit_lm, col = "blue")
+
+# Chi Squared Test
+chi_squared_test <- chisq.test(unlist(x = data_culled$streams), unlist(x = data_culled$bpm), TRUE)
+print(chi_squared_test)
